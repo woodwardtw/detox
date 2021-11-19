@@ -101,7 +101,9 @@ p {
   display: block;
   transition: all ease .6s;
   padding:  10px 10px 10px 10px;
-  border-left:  5px solid var(--light-green);
+  box-shadow: rgba(0, 75, 35, 0.4) -5px 3px;
+  border:  1px solid rgba(0, 75, 35, 0.4);
+  border-radius: 5px;
 }
 
 .explore a{
@@ -114,15 +116,38 @@ p {
 }
 
 .explore li:hover {
-  box-shadow: rgba(0, 75, 35, 0.4) 5px 0px, 
-    rgba(0, 75, 35, 0.3) 10px 0px, 
-    rgba(0, 75, 35, 0.2) 15px 0px, 
-    rgba( 0, 75, 35, 0.1) 20px 0px, 
-    rgba(  0, 75, 35, 0.05) 25px 0px;
+  box-shadow: rgba(0, 75, 35, 0.4) -5px 5px, 
+    rgba(0, 75, 35, 0.3) -10px 10px, 
+    rgba(0, 75, 35, 0.2) -15px 15px, 
+    rgba( 0, 75, 35, 0.1) -20px 20px, 
+    rgba(  0, 75, 35, 0.05) -25px 25px;
 }
 
 .excerpt {
   font-size: .6em;
+}
+
+.btn-detox {
+  display: block;
+  text-align: center;
+  padding:  10px 15px;
+  margin:  35px auto;
+  font-size: 1.2em;
+  font-weight: 700;
+  width:  310px;
+  text-decoration: none;
+  transition: background-color .5s ease, box-shadow .5s ease;
+  border-radius: 5px;
+  box-shadow: rgba(0, 75, 35, 0.4) -5px 3px;
+  border:  1px solid rgba(0, 75, 35, 0.4);
+}
+
+.btn-detox:hover {
+   box-shadow: rgba(0, 75, 35, 0.4) -5px 5px, 
+    rgba(0, 75, 35, 0.3) -10px 10px, 
+    rgba(0, 75, 35, 0.2) -15px 15px, 
+    rgba( 0, 75, 35, 0.1) -20px 20px, 
+    rgba(  0, 75, 35, 0.05) -25px 25px;
 }
 
 footer {
