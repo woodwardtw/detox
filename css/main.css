@@ -100,7 +100,7 @@ p {
   margin-bottom: 25px;
   display: block;
   transition: all ease .6s;
-  padding:  10px 10px 10px 10px;
+  padding:  20px 15px 15px 25px;
   box-shadow: rgba(0, 75, 35, 0.4) -5px 3px;
   border:  1px solid rgba(0, 75, 35, 0.4);
   border-radius: 5px;
@@ -113,6 +113,20 @@ p {
   display: inline-block;
   width:  100%;
   height: auto;
+  text-decoration: none;
+  position: relative;
+}
+
+.explore a:after {
+  content: '\2197';
+  display: inline-block;
+  position: absolute;
+  height:  30px;
+  width:  30px;
+  right:  -20px;
+  top:  0;
+  font-size: .6em;
+  color:  rgba(0, 75, 35, 0.4);
 }
 
 .explore li:hover {
@@ -148,6 +162,12 @@ p {
     rgba(0, 75, 35, 0.2) -15px 15px, 
     rgba( 0, 75, 35, 0.1) -20px 20px, 
     rgba(  0, 75, 35, 0.05) -25px 25px;
+}
+
+.nav .btn-footer{
+  margin:  5px 10px;
+  display: inline-block;
+  width:  auto;
 }
 
 blockquote{
