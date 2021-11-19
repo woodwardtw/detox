@@ -3,6 +3,7 @@
     /* 0, 75, 35*/
     --bright-green: #38B000;
     --light-green: rgba(0, 75, 35, 0.3);
+    --bg-green:  rgba(221,229,219,1);
 }
 
 body, ul, ol, li, p {
@@ -73,14 +74,14 @@ h2 {
     text-align: center;
 }
 
-p {
+p, li {
     font-size: 1.3em;
     font-family: sans-serif;
-    line-height: 1.2;
+    line-height: 1.3em;
 }
 
 .container {
-    margin: 30px;
+    margin: 30px 30px 150px 30px;
     background-color: #fff;
     padding: 100px;
     display: flex;
@@ -193,16 +194,16 @@ footer {
   bottom:  0;
   left:  0;
   display: block;
-  background-color: var(--dark-green);
+  background-color: rgba(221,229,219,1);
   height:  40px;
   padding:  10px;
-  color:  #fff;
+  color:  var(--dark-green);
   font-family: sans-serif;
   width:  100%;
 }
 
 footer a {
-  color:  #fff;
+  color:  var(--dark-green);
 }
 
 .footer {
@@ -223,6 +224,17 @@ footer .nav a {
   margin-left:  15px;
 }
 
+.so-what {
+  position: absolute;
+    top: 22px;
+    left: 200px;
+    width:  20px;
+    height:  20px;
+    border-radius: 50%;
+    border:  1px solid var(--dark-green);
+    text-align: center;
+}
+
 body {
     /*from http://www.heropatterns.com/*/
     padding:  0;
@@ -233,9 +245,15 @@ body {
 
 @media only screen and (max-width: 600px) {
 h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
+    text-align: center;
   }
-  .container {
+
+h2 {
+  font-size: 1.8em;
+}
+
+.container {
     margin: 10px;
     background-color: #fff;
     padding: 30px;   
@@ -247,5 +265,34 @@ h1 {
 
 .col-two {
     width: 100%;
+  }
+
+  .btn-detox {
+    width:  90%;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left:  0;
+  }
+  .explore ul li a{
+    font-size:  .9em;
+    line-height: 1.2em;
+  }
+
+  .explore a:after {
+    content:  '';
+  }
+
+  footer {
+    position: relative;
+    height: 180px;
+  }
+
+  footer .data {    
+    margin: 20px 10px;
+    padding-bottom:  15px;
+    width: 90%;
+    border-bottom:  1px solid var(--dark-green);
   }
 }
