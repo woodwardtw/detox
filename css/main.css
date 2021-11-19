@@ -150,6 +150,24 @@ p {
     rgba(  0, 75, 35, 0.05) -25px 25px;
 }
 
+blockquote{
+  margin:  50px auto;
+  border-left:  10px solid rgba(0, 75, 35, 0.4);
+  font-style: italic;
+  font-weight:  100;
+  padding-left:  20px;
+  padding-bottom: 20px;
+}
+
+blockquote:before {
+  color: rgba(0, 75, 35, 0.4);
+  content: open-quote;
+  font-size: 5em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -.6em;
+}
+
 footer {
   position: fixed;
   bottom:  0;
