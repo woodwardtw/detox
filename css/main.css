@@ -98,7 +98,7 @@ p, li {
 }
 
 .explore ul li {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   display: block;
   transition: all ease .6s;
   padding:  20px 15px 15px 25px;
@@ -204,6 +204,7 @@ footer {
 
 footer a {
   color:  var(--dark-green);
+  text-decoration: ;
 }
 
 .footer {
@@ -217,12 +218,25 @@ footer .data {
 }
 
 footer .nav {
-  width: 500px;
+  width: 700px;
 }
 
 footer .nav a {
-  margin-left:  15px;
+  margin:  5px 0;
+  text-underline-position: under;
+  border:  1px solid var(--dark-green);
+  padding:  5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  transform: rotate(0deg);
+  transition: transform 2s;
 }
+
+footer .nav a:hover .arrow {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
 
 .so-what {
   position: absolute;
@@ -233,6 +247,7 @@ footer .nav a {
     border-radius: 50%;
     border:  1px solid var(--dark-green);
     text-align: center;
+    text-decoration: none;
 }
 
 body {
