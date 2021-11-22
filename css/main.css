@@ -232,6 +232,11 @@ footer .nav a {
   transition: transform 2s;
 }
 
+footer .nav a .arrow {
+    transition: transform .5s ease;
+}
+
+
 footer .nav a:hover .arrow {
   display: inline-block;
   transform: rotate(-45deg);
@@ -248,6 +253,10 @@ footer .nav a:hover .arrow {
     border:  1px solid var(--dark-green);
     text-align: center;
     text-decoration: none;
+}
+
+.explore #action li, .explore #reading li{
+  font-size: .8em;
 }
 
 body {

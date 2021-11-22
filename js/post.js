@@ -13,8 +13,6 @@ window.onload = function () {
 function getDetoxPost(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-
-
 	const destination = document.querySelector('#destination');
 	const dataUrl = 'json/detox.json';
 	fetch(dataUrl)
@@ -31,8 +29,10 @@ function getDetoxPost(){
      if ( urlId == postId){
         let title = value.title.rendered;
         let body = value.content.rendered;
+        let action = value.acf.take_action
         document.querySelector('#post-title').innerHTML = title;
         document.querySelector('#post-body').innerHTML = body;
+        document.querySelector('#action').innerHTML = action;
      }
      
 	});
