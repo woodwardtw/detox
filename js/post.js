@@ -29,10 +29,12 @@ function getDetoxPost(){
      if ( urlId == postId){
         let title = value.title.rendered;
         let body = value.content.rendered;
-        let action = value.acf.take_action
+        let action = value.acf.take_action;
+        let read = value.acf.keep_reading;
         document.querySelector('#post-title').innerHTML = title;
         document.querySelector('#post-body').innerHTML = body;
-        document.querySelector('#action').innerHTML = action;
+        document.querySelector('#action').innerHTML = `<h2>Take<br>Action</h2>${action}`;
+        document.querySelector('#read').innerHTML = `<h2>Read<br>More</h2>${read}`;
      }
      
 	});
