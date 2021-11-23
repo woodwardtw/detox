@@ -21,7 +21,7 @@ function getDetoxPosts(){
   .then(function(data) {
   // GOOD
   data.forEach(function (value, i) {
-  	 console.log(value)
+  	 //console.log(value)
      let title = value.title.rendered;
      let excerpt = value.excerpt.rendered;
      let postId = value.id;
