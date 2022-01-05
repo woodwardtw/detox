@@ -311,6 +311,16 @@ footer .nav a:hover .arrow {
   font-size: .8em;
 }
 
+#single .explore a {
+  width:  auto;
+  font-size: inherit;
+  display: inline;
+}
+
+#single .explore a:after {
+  display: none;
+}
+
 body {
     /*from http://www.heropatterns.com/*/
     padding:  0;
