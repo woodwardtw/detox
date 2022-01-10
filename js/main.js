@@ -21,11 +21,11 @@ function getDetoxPosts(){
   .then(function(data) {
   // GOOD
   data.forEach(function (value, i) {
-  	 //console.log(value)
      let title = value.title.rendered;
+     let cleanTitle = title.replace('DD ', '');
      let excerpt = value.excerpt.rendered;
      let postId = value.id;
-     destination.innerHTML = destination.innerHTML + `<li><a href="./post.html?id=${postId}">${title}</a></li>`;
+     destination.innerHTML = destination.innerHTML + `<li><a href="./post.html?id=${postId}">${cleanTitle}</a></li>`;
 	});
 
 });

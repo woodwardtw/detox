@@ -92,10 +92,13 @@ li {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    overflow-y: visible;
 }
 
 .col-one {
     width: 500px;
+    height: 100%;
+    overflow-y: visible;
 }
 
 .col-two {

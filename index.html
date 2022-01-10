@@ -61,8 +61,9 @@
 	 		</div>
 	 	</div>
 	 </footer>
-	 <!--<script type="text/javascript" src="js/main.js"></script>-->
-	 <script type="text/javascript">
-	function getDetoxPosts(){const o=document.querySelector("#destination");fetch("json/detox.json").then(function(n){return n.json()}).then(function(n){n.forEach(function(n,e){var t=n.title.rendered,n=(n.excerpt.rendered,n.id);o.innerHTML=o.innerHTML+`<li><a href="./post.html?id=${n}">${t}</a></li>`})})}window.onload=function(){var n=window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;console.log("Page load time is "+n);const e=document.querySelector("#speed");e.innerHTML=n+" ms",getDetoxPosts()};	 </script>
+<!-- 	 <script type="text/javascript" src="js/main.js"></script>
+ -->	 
+ <script type="text/javascript">
+	function getDetoxPosts(){const e=document.querySelector("#destination");fetch("json/detox.json").then(function(e){return e.json()}).then(function(n){n.forEach(function(n,o){console.log(n);let t=n.title.rendered.replace("DD ","");console.log(t);n.excerpt.rendered;let i=n.id;e.innerHTML=e.innerHTML+`<li><a href="./post.html?id=${i}">${t}</a></li>`})})}window.onload=function(){const e=window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;console.log("Page load time is "+e),document.querySelector("#speed").innerHTML=e+" ms",getDetoxPosts()};	 </script>
     </body>
 </html>
